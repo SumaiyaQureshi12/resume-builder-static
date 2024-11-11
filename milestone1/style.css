@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f3f7;
+    color: #111010; 
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+
+.resume-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease;
+}
+
+.resume-container:hover {
+    transform: translateY(-5px); 
+}
+
+
+header h1 {
+    font-size: 2.4em;
+    color: #284977; 
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.profile-picture {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid grey;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+}
+
+
+h2 {
+    font-size: 1.8em;
+    color: #58739a;
+    margin-top: 25px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #d1d9e6; 
+    font-weight: bold;
+    
+}
+
+
+section {
+    margin-bottom: 20px;
+}
+
+
+.information p,
+.education p,
+.experience p,
+.skills ul {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+}
+
+.information p strong,
+.education h3,
+.experience h3 {
+    color: #333;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+/* Skills List Styling */
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 0;
+}
+
+.skills ul li {
+    background-color: #e7efff;
+    color: #2b78e4;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Toggle Button */
+#toggle-skills {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    padding: 12px 0;
+    background-color: #1a717a;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#toggle-skills:hover {
+    background-color: #9aabc3;
+    transform: scale(1.05);
+}
+
+/* Hide/Show Skills Section */
+#skillsSection {
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    overflow: hidden;
+    max-height: 600px;
+    opacity: 1;
+}
+
+#skillsSection.hidden {
+    max-height: 0;
+    opacity: 0;
+}
